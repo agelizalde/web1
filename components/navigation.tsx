@@ -23,16 +23,19 @@ export function Navigation({ onContactClick }: NavigationProps) {
     <nav className="bg-white shadow-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo and Company Name */}
+        {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">RS</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">RiverSupply</h1>
-              <p className="text-xs text-gray-600">Paraguay Logistics</p>
-            </div>
+            <img
+              src="https://www.riversupply.com.py/assets/images/logo.jpg"
+              alt="River Supply Logo"
+              className="w-10 h-10 rounded-lg object-cover"
+              />
+          <div>
+            <h1 className="text-xl font-bold text-gray-900">River Supply</h1>
+            <p className="text-xs text-gray-600">Abastecimiento fluvial</p>
           </div>
+        </div>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">

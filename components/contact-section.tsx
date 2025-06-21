@@ -146,7 +146,7 @@ export function ContactSection() {
               <CardContent className="p-0">
                 <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.5989876073785!2d-57.63591368498077!3d-25.28395998389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da8c6e7b7f7f7%3A0x1234567890abcdef!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d881.8452752138896!2d-57.65885484988792!3d-25.277826481231152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d09109eb90a53%3A0xd95b2ad9af883e23!2sRiver%20Services%20SRL!5e1!3m2!1sen!2spy!4v1750515360342!5m2!1sen!2spy"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -158,6 +158,7 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
+
 
             {/* Contact Information */}
             <Card className="shadow-lg">

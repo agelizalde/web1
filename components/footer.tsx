@@ -71,11 +71,11 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-green-400" />
-                <span className="text-gray-400">+595 21 123 456</span>
+                <span className="text-gray-400">+................</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-purple-400" />
-                <span className="text-gray-400">contacto@riversupply.com.py</span>
+                <span className="text-gray-400">operaciones@riversupply.com.py</span>
               </div>
             </div>
           </div>
@@ -83,18 +83,21 @@ export function Footer() {
 
         {/* Sister Companies */}
         <div className="border-t border-gray-800 pt-8 mb-8">
-          <h4 className="text-lg font-semibold mb-4 text-center">Empresas Hermanas</h4>
+          <h4 className="text-lg font-semibold mb-4 text-center">Conoce más de nosotros</h4>
           <div className="flex justify-center space-x-8">
             <a
-              href="https://example-company1.com"
+              href="https://riverservices.com.py"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <div className="w-24 h-12 bg-gray-800 rounded flex items-center justify-center">
-                <span className="text-white font-bold">LOGO1</span>
-              </div>
+              <img
+                src="https://riverservices.com.py/wp-content/uploads/2022/09/logo-footer.png"
+                alt="RiverServices Logo"
+                className="w-24 h-12 object-contain rounded"
+              />
             </a>
+
             <a
               href="https://example-company2.com"
               target="_blank"
@@ -125,7 +128,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-gray-400 text-sm">© 2024 RiverSupply Paraguay. Todos los derechos reservados.</p>
+            <p className="text-gray-400 text-sm">© 2025 River Supply SA. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
