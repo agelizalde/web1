@@ -64,7 +64,7 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="/placeholder.svg?height=600&width=800"
+                src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=600&width=800"
                 alt="Logística fluvial en Paraguay"
                 className="w-full h-[600px] object-cover transform hover:scale-105 transition-transform duration-700"
               />
