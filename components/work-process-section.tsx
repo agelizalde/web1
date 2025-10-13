@@ -46,10 +46,10 @@ export function WorkProcessSection() {
             <div key={index} className="flex-1 flex flex-col items-center relative">
               {/* Icono con número */}
               <div className="relative mb-8">
-                <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto transition-shadow group-hover:shadow-xl">
+                <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto transition-shadow group-hover:shadow-xl z-10">
                   {step.icon}
                 </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold z-20">
                   {index + 1}
                 </div>
               </div>
@@ -59,9 +59,9 @@ export function WorkProcessSection() {
 
               {/* Línea punteada entre pasos */}
               {index < steps.length - 1 && (
-                <div className="hidden md:flex absolute top-12 right-[-50%] w-[100%] h-0.5 items-center z-0">
+                <div className="hidden md:flex absolute top-1/2 left-full w-full h-0.5 -translate-y-1/2 z-0">
                   <div className="flex w-full justify-between">
-                    {[...Array(10)].map((_, i) => (
+                    {[...Array(20)].map((_, i) => (
                       <div
                         key={i}
                         className="w-1 h-1 bg-gray-300 rounded-full"

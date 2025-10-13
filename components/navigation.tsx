@@ -26,7 +26,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
         {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
             <img
-              src="https://www.riversupply.com.py/asseimts/ages/logo.jpg"
+              src="https://web1-six-teal.vercel.app/logosupply.jpg" /* Modificar a posterior */
               alt="River Supply Logo"
               className="w-10 h-10 rounded-lg object-cover"
               />

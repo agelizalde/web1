@@ -52,8 +52,8 @@ Al servicio de las embarcaciones que navegan el río Paraguay.</p>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
                 onClick={() => scrollToSection("services")}
+                className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
               >
                 Ver Servicios
               </Button>

@@ -10,7 +10,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 space-y-2 sm:space-y-0">
             <img
-              src="https://www.riversupply.com.py/logosupply.jpg" // reemplazá por el nombre real del archivo
+              src="https://web1-six-teal.vercel.app/logosupply.jpg" /* Modificar a posterior */
               alt="River Supply"
               className="w-10 h-10 object-contain"
             />
