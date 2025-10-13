@@ -56,7 +56,7 @@ export function AboutSection() {
               {/* Large image */}
               <div className="col-span-2 relative overflow-hidden rounded-xl">
                 <img
-                  src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=300&width=600"
+                  src="/big_1.png?height=300&width=600"
                   alt="Operaciones fluviales"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -65,7 +65,7 @@ export function AboutSection() {
               {/* Small images */}
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=200&width=300"
+                  src="/small_1.png?height=200&width=300"
                   alt="Equipo de trabajo"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -73,7 +73,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=200&width=300"
+                  src="/small_2.jpg?height=200&width=300"
                   alt="Tecnología avanzada"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -81,7 +81,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=200&width=300"
+                  src="/small_3.png?height=200&width=300"
                   alt="Logística terrestre"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -89,7 +89,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="https://www.riversupply.com.py/assets/images/combustible1.jpg?height=200&width=300"
+                  src="small_4.jpg?height=200&width=300"
                   alt="Suministros de calidad"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
