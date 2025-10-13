@@ -8,6 +8,14 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onContactClick }: HeroSectionProps) {
+  // Función para hacer scroll suave a una sección
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   return (
     <section id="hero" className="bg-gradient-to-br from-blue-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +30,8 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
                 Transformamos el aprovisionamiento fluvial con soluciones logísticas de alta calidad, tecnología, trazabilidad y atención 24/7.
-Al servicio de las embarcaciones que navegan el río Paraguay.</p>
+                Al servicio de las embarcaciones que navegan el río Paraguay.
+              </p>
             </div>
 
             <div className="flex flex-wrap gap-4">
@@ -49,11 +58,12 @@ Al servicio de las embarcaciones que navegan el río Paraguay.</p>
                 Solicitar Cotización
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+
               <Button
                 type="button"
                 variant="outline"
                 size="lg"
-                onClick={() => scrollToSection("services")}
+                onClick={() => scrollToSection("services")} // Ahora funciona
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
               >
                 Ver Servicios
