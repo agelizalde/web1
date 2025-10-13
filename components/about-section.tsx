@@ -56,7 +56,7 @@ export function AboutSection() {
               {/* Large image */}
               <div className="col-span-2 relative overflow-hidden rounded-xl">
                 <img
-                  src="/big_1.png?height=300&width=600"
+                  src="/big_1.png"
                   alt="Operaciones fluviales"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
                 />
