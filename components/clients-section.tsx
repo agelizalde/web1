@@ -17,7 +17,7 @@ export function ClientsSection({ onContactClick }: ClientsSectionProps) {
       buttonText: "Descargar PDF",
       buttonAction: () => {
         const link = document.createElement("a")
-        link.href = "/catalogo-clientes.pdf" // ruta dentro de /public
+        link.href = "riversupply.com.py/catalogo-clientes.pdf" // ruta dentro de /public
         link.download = "catalogo-clientes.pdf"
         link.click()
       },
@@ -31,7 +31,7 @@ export function ClientsSection({ onContactClick }: ClientsSectionProps) {
       buttonText: "Descargar PDF",
       buttonAction: () => {
         const link = document.createElement("a")
-        link.href = "/catalogo-clientes.pdf" // ruta dentro de /public
+        link.href = "riversupply.com.py/catalogo-clientes.pdf" // ruta dentro de /public
         link.download = "informacion-proveedores.pdf"
         link.click()
       },

@@ -26,13 +26,12 @@ export function Navigation({ onContactClick }: NavigationProps) {
         {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
             <img
-              src="https://www.riversupply.com.py/assets/images/logo.jpg"
+              src="https://www.riversupply.com.py/asseimts/ages/logo.jpg"
               alt="River Supply Logo"
               className="w-10 h-10 rounded-lg object-cover"
               />
           <div>
             <h1 className="text-xl font-bold text-gray-900">River Supply</h1>
-            <p className="text-xs text-gray-600">Abastecimiento fluvial</p>
           </div>
         </div>
 
