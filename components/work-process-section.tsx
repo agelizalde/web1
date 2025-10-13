@@ -41,11 +41,20 @@ export function WorkProcessSection() {
         </div>
 
         {/* Contenedor de pasos */}
-        <div className="flex flex-col md:flex-row items-center justify-between relative">
+        <div className="relative flex flex-col md:flex-row items-center justify-between">
+          {/* Línea horizontal detrás de los pasos */}
+          <div className="hidden md:flex absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 -z-10">
+            {/* Punteado usando un gradiente repetido */}
+            <div className="flex w-full justify-between">
+              {steps.slice(0, steps.length - 1).map((_, i) => (
+                <div key={i} className="w-8 h-0.5 bg-gray-300 rounded-full" />
+              ))}
+            </div>
+          </div>
+
           {steps.map((step, index) => (
             <div key={index} className="flex-1 flex flex-col items-center relative">
-              {/* Icono con número */}
-              <div className="relative mb-8">
+              <div className="relative mb-6">
                 <div className="w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto transition-shadow group-hover:shadow-xl z-10">
                   {step.icon}
                 </div>
@@ -53,23 +62,12 @@ export function WorkProcessSection() {
                   {index + 1}
                 </div>
               </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">{step.title}</h3>
-              <p className="text-gray-600 leading-relaxed text-center">{step.description}</p>
-
-              {/* Línea punteada entre pasos */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:flex absolute top-1/2 left-full w-full h-0.5 -translate-y-1/2 z-0">
-                  <div className="flex w-full justify-between">
-                    {[...Array(20)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="w-1 h-1 bg-gray-300 rounded-full"
-                      />
-                    ))}
-                  </div>
-                </div>
-              )}
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">
+                {step.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-center">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
