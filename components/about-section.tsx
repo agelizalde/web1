@@ -54,27 +54,20 @@ export function AboutSection() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               {/* Large image */}
-              <div className="col-span-2 relative overflow-hidden rounded-xl">
-                <img
-                  src="/big_1.png"
-                  alt="Operaciones fluviales"
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
-                />
+              <div className="col-span-2 relative overflow-hidden rounded-xl"> 
+                <img 
+                  src="/big_1_rm.png?height=300&width=600" 
+                  alt="Operaciones fluviales" 
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" /> 
               </div>
 
+
               {/* Small images */}
-              <div className="col-span-2 relative overflow-hidden rounded-xl">
+              <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/big_1.png"
-                  srcSet="
-                    /big_1-600.png 600w,
-                    /big_1-1200.png 1200w,
-                    /big_1-1920.png 1920w,
-                    /big_1-3840.png 3840w
-                  "
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  alt="Operaciones fluviales"
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                  src="/small_2.jpg?height=200&width=300"
+                  alt="Tecnología avanzada"
+                  className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
