@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -17,27 +15,40 @@ export function ContactSection() {
     phone: "",
     message: "",
   })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: "",
-    })
-    alert("¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.")
-  }
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (data.success) {
+        alert("¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.")
+        setFormData({ name: "", company: "", email: "", phone: "", message: "" })
+      } else {
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente.")
+      }
+    } catch (error) {
+      console.error(error)
+      alert("Hubo un error al enviar el mensaje. Intenta nuevamente.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -132,8 +143,12 @@ export function ContactSection() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3">
-                  Enviar Mensaje
+                <Button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3"
+                  disabled={loading}
+                >
+                  {loading ? "Enviando..." : "Enviar Mensaje"}
                 </Button>
               </form>
             </CardContent>
@@ -158,7 +173,6 @@ export function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-
 
             {/* Contact Information */}
             <Card className="shadow-lg">

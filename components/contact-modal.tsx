@@ -1,7 +1,5 @@
 "use client"
 
-import type React from "react"
-
 import { useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
@@ -22,27 +20,41 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Modal form submitted:", formData)
-    // Reset form
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      message: "",
-    })
-    alert("¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.")
-    onClose()
-  }
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (data.success) {
+        alert("¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.")
+        setFormData({ name: "", company: "", email: "", phone: "", message: "" })
+        onClose()
+      } else {
+        alert("Hubo un error al enviar el mensaje. Intenta nuevamente.")
+      }
+    } catch (error) {
+      console.error(error)
+      alert("Hubo un error al enviar el mensaje. Intenta nuevamente.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -130,8 +142,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           </div>
 
           <div className="flex gap-3 pt-4">
-            <Button type="submit" className="flex-1 bg-blue-600 hover:bg-blue-700 text-white">
-              Enviar Mensaje
+            <Button
+              type="submit"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white"
+              disabled={loading}
+            >
+              {loading ? "Enviando..." : "Enviar Mensaje"}
             </Button>
             <Button type="button" variant="outline" onClick={onClose} className="px-6">
               Cancelar
