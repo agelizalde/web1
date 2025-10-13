@@ -169,7 +169,7 @@ export function ContactSection() {
                     <MapPin className="w-6 h-6 text-blue-600 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Dirección</p>
-                      <p className="text-gray-600">Av. Principal 123, Asunción, Paraguay</p>
+                      <p className="text-gray-600">Teniente 1º Uservolod Kanonikoff, Asunción</p>
                     </div>
                   </div>
 
@@ -177,7 +177,7 @@ export function ContactSection() {
                     <Phone className="w-6 h-6 text-green-600 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Teléfono</p>
-                      <p className="text-gray-600">+595 21 123 456</p>
+                      <p className="text-gray-600">+595 981 075153</p>
                     </div>
                   </div>
 
@@ -185,7 +185,7 @@ export function ContactSection() {
                     <Mail className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">contacto@riversupply.com.py</p>
+                      <p className="text-gray-600">operaciones@riversupply.com.py</p>
                     </div>
                   </div>
 

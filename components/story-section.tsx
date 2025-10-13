@@ -9,13 +9,14 @@ export function StorySection() {
           <div className="space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Nuestra Historia</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Desde nuestros inicios, hemos estado comprometidos con la transformación digital del sector logístico
-              fluvial en Paraguay. Nuestro video corporativo muestra el camino recorrido y nuestra visión hacia el
-              futuro.
+              La Hidrovía Paraguay-Paraná está en constante crecimiento, y con ello surge la necesidad de elevar 
+              los estándares de servicio en toda la cadena logística. En River Supply, nos enfocamos en mejorar la 
+              calidad de servicio, garantizar la trazabilidad de los productos y ofrecer soluciones integrales que respondan 
+              a las necesidades de la industria.
             </p>
             <p className="text-gray-600">
-              Descubre cómo combinamos la experiencia tradicional con la innovación tecnológica para ofrecer soluciones
-              que superan las expectativas de nuestros clientes.
+              Unimos la experiencia de siempre con tecnología de punta para brindar soluciones que realmente marcan la 
+              diferencia para nuestros clientes.
             </p>
           </div>
 
@@ -25,7 +26,7 @@ export function StorySection() {
               <div className="aspect-video bg-gray-900 flex items-center justify-center">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://www.youtube.com/embed/2EoUvQs3R9Y"
                   title="Video Corporativo RiverSupply"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

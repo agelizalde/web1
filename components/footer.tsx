@@ -8,20 +8,20 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RS</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">RiverSupply</h3>
-                <p className="text-sm text-gray-400">Paraguay Logistics</p>
-              </div>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3 space-y-2 sm:space-y-0">
+            <img
+              src="https://www.riversupply.com.py/public/logosupply.jpg" // reemplazá por el nombre real del archivo
+              alt="River Supply"
+              className="w-10 h-10 object-contain"
+            />
+            <div className="flex flex-col">
+              <h3 className="text-xl font-bold">River Supply</h3>
+              <p className="text-sm text-gray-400">
+                Revolucionando la logística fluvial en Paraguay con soluciones innovadoras y servicio 24/7.
+              </p>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Revolucionando la logística fluvial en Paraguay con soluciones innovadoras y servicio 24/7.
-            </p>
           </div>
+
 
           {/* Quick Links */}
           <div>
@@ -71,7 +71,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-green-400" />
-                <span className="text-gray-400">+................</span>
+                <span className="text-gray-400">+595 981 075153</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-purple-400" />
@@ -105,7 +105,7 @@ export function Footer() {
               className="hover:opacity-80 transition-opacity"
             >
               <div className="w-24 h-12 bg-gray-800 rounded flex items-center justify-center">
-                <span className="text-white font-bold">LOGO2</span>
+                <span className="text-white font-bold">Astillero</span>
               </div>
             </a>
           </div>

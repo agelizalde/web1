@@ -16,20 +16,19 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Revolucionando la
-                <span className="text-blue-600 block">Logística Fluvial</span>
+                Revolucionando el
+                <span className="text-blue-600 block">Aprovisionamiento Fluvial</span>
                 en Paraguay
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Soluciones logísticas de alta calidad y confiables para embarcaciones que operan en ríos. Digitalizamos
-                el sector con tecnología avanzada y servicio 24/7.
-              </p>
+                Transformamos el aprovisionamiento fluvial con soluciones logísticas de alta calidad, tecnología, trazabilidad y atención 24/7.
+Al servicio de las embarcaciones que navegan el río Paraguay.</p>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center space-x-2 text-gray-700">
                 <Ship className="w-5 h-5 text-blue-600" />
-                <span className="text-sm font-medium">Logística Fluvial</span>
+                <span className="text-sm font-medium">Aprovisionamiento Fluvial</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <Clock className="w-5 h-5 text-blue-600" />
@@ -54,6 +53,10 @@ export function HeroSection({ onContactClick }: HeroSectionProps) {
                 variant="outline"
                 size="lg"
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg"
+                onClick={() => {
+                  const section = document.getElementById("servicios");
+                  section?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Ver Servicios
               </Button>

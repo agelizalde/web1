@@ -16,9 +16,8 @@ export function ClientsSection({ onContactClick }: ClientsSectionProps) {
       description: "Descarga nuestro catálogo completo de servicios y productos disponibles.",
       buttonText: "Descargar PDF",
       buttonAction: () => {
-        // Simulate PDF download
         const link = document.createElement("a")
-        link.href = "#"
+        link.href = "/catalogo-clientes.pdf" // ruta dentro de /public
         link.download = "catalogo-clientes.pdf"
         link.click()
       },
@@ -31,9 +30,8 @@ export function ClientsSection({ onContactClick }: ClientsSectionProps) {
       description: "Información para empresas interesadas en formar parte de nuestra red de proveedores.",
       buttonText: "Descargar PDF",
       buttonAction: () => {
-        // Simulate PDF download
         const link = document.createElement("a")
-        link.href = "#"
+        link.href = "/catalogo-clientes.pdf" // ruta dentro de /public
         link.download = "informacion-proveedores.pdf"
         link.click()
       },

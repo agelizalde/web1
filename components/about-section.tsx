@@ -30,9 +30,7 @@ export function AboutSection() {
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Sobre Nosotros</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Somos una empresa pionera en Paraguay, comprometida con revolucionar el sector de suministros fluviales
-                mediante soluciones logísticas innovadoras y tecnología de vanguardia. Nuestra misión es proporcionar
-                servicios confiables y de alta calidad que impulsen el crecimiento del transporte fluvial en la región.
+                Somos una empresa pionera en Paraguay, dedicada a transformar el sector de suministros fluviales mediante soluciones logísticas innovadoras y tecnología de vanguardia. Nuestra misión es ofrecer servicios confiables y de alta calidad que potencien el crecimiento del transporte fluvial en la región.
               </p>
             </div>
 
