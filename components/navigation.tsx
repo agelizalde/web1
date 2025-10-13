@@ -28,7 +28,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
             <img
               src="/logo1.jpg" /* Modificar a posterior */
               alt="River Supply Logo"
-              className="w-10 rounded-lg object-cover"
+              className="h-10 rounded-lg object-cover"
               />
           <div>
             <h1 className="text-xl font-bold text-gray-900">River Supply</h1>
