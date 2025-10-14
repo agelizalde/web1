@@ -160,7 +160,7 @@ export function ContactSection() {
             <Card className="shadow-lg">
               <CardContent className="p-0">
                 <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.8044476834257!2d-57.66189132495406!3d-25.27716292686135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d090078b3cf49%3A0xf45b09009a024acd!2sRiver%20Supply%20S.A!5e0!3m2!1sen!2spy!4v1760446409187!5m2!1sen!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.8044476834257!2d-57.66189132495406!3d-25.27716292686135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d090078b3cf49%3A0xf45b09009a024acd!2sRiver%20Supply%20S.A!5e0!3m2!1sen!2spy!4v1760447075813!5m2!1sen!2spy" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </CardContent>
             </Card>
