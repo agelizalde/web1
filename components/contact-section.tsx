@@ -160,16 +160,14 @@ export function ContactSection() {
             <Card className="shadow-lg">
               <CardContent className="p-0">
                 <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d881.8452752138896!2d-57.65885484988792!3d-25.277826481231152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d09109eb90a53%3A0xd95b2ad9af883e23!2sRiver%20Services%20SRL!5e1!3m2!1sen!2spy!4v1750515360342!5m2!1sen!2spy"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Ubicación RiverSupply"
-                  ></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.8044476834257!2d-57.66189132495406!3d-25.27716292686135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d090078b3cf49%3A0xf45b09009a024acd!2sRiver%20Supply%20S.A!5e0!3m2!1sen!2spy!4v1760446409187!5m2!1sen!2spy" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
               </CardContent>
             </Card>
