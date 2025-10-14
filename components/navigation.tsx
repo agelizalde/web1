@@ -30,7 +30,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
               <img
                 src="/logo_mini.jpg"
                 alt="River Supply Logo"
-                className="h-10 rounded-lg object-cover"
+                className="h-20 rounded-lg object-cover"
               />
             </Link>
             <div>
