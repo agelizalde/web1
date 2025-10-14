@@ -72,7 +72,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/small_3.png?height=200&width=300"
+                  src="/small_2_rm.jpg?height=200&width=300"
                   alt="Error"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -80,7 +80,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/small_3.png?height=200&width=300"
+                  src="/small_3_rm.png?height=200&width=300"
                   alt="Logística terrestre"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -88,7 +88,7 @@ export function AboutSection() {
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="small_4.jpg?height=200&width=300"
+                  src="small_4_rm.jpg?height=200&width=300"
                   alt="Suministros de calidad"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
