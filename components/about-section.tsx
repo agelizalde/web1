@@ -61,7 +61,6 @@ export function AboutSection() {
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" /> 
               </div>
 
-
               {/* Small images */}
               <div className="relative overflow-hidden rounded-xl">
                 <img
@@ -71,15 +70,13 @@ export function AboutSection() {
                 />
               </div>
 
-
               <div className="relative overflow-hidden rounded-xl">
                 <img
                   src="/small_3.png?height=200&width=300"
-                  alt="Logística terrestre"
+                  alt="Error"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
