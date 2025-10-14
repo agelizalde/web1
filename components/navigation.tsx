@@ -26,7 +26,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
         {/* Logo and Company Name */}
           <div className="flex items-center space-x-3">
             <img
-              src="/logo1.jpg" /* Modificar a posterior */
+              src="/logo_mini.jpg" /* Modificar a posterior */
               alt="River Supply Logo"
               className="h-10 rounded-lg object-cover"
               />

@@ -97,16 +97,17 @@ export function Footer() {
                 className="w-24 h-12 object-contain rounded"
               />
             </a>
-
             <a
-              href="https://example-company2.com"
+              href="https://nuevaasuncion.com.py/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <div className="w-24 h-12 bg-gray-800 rounded flex items-center justify-center">
-                <span className="text-white font-bold">Astillero</span>
-              </div>
+              <img
+                src="https://riverservices.com.py/wp-content/uploads/2022/09/logo-footer.png"
+                alt="RiverServices Logo"
+                className="w-24 h-12 object-contain rounded"
+              />
             </a>
           </div>
         </div>
