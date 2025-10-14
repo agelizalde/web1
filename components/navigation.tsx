@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 interface NavigationProps {
   onContactClick: () => void
@@ -24,17 +25,18 @@ export function Navigation({ onContactClick }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
         {/* Logo and Company Name */}
-          <div className="flex items-center space-x-3">
-            <img
-              src="/logo_mini.jpg" /* Modificar a posterior */
-              alt="River Supply Logo"
-              className="h-10 rounded-lg object-cover"
+          <div className="flex items-center space-x-3 cursor-pointer">
+            <Link href="/">
+              <img
+                src="/logo_mini.jpg"
+                alt="River Supply Logo"
+                className="h-10 rounded-lg object-cover"
               />
-          <div>
-            <h1 className="text-xl font-bold text-gray-900">River Supply</h1>
+            </Link>
+            <div>
+              <h1 className="text-xl font-bold text-gray-900">River Supply</h1>
+            </div>
           </div>
-        </div>
-
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">

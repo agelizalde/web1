@@ -65,19 +65,21 @@ export function AboutSection() {
               {/* Small images */}
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/small_2.jpg?height=200&width=300"
-                  alt="Tecnología avanzada"
+                  src="/small_1_rm.png?height=200&width=300"
+                  alt="Logística terrestre"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
 
+
               <div className="relative overflow-hidden rounded-xl">
                 <img
-                  src="/small_2.jpg?height=200&width=300"
-                  alt="Tecnología avanzada"
+                  src="/small_3.png?height=200&width=300"
+                  alt="Logística terrestre"
                   className="w-full h-32 object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
+
 
               <div className="relative overflow-hidden rounded-xl">
                 <img
