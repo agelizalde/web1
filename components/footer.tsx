@@ -92,7 +92,7 @@ export function Footer() {
               className="hover:opacity-80 transition-opacity"
             >
               <img
-                src="https://riverservices.com.py/wp-content/uploads/2022/09/logo-footer.png"
+                src="river"
                 alt="RiverServices Logo"
                 className="w-24 h-12 object-contain rounded"
               />
@@ -104,32 +104,11 @@ export function Footer() {
               className="hover:opacity-80 transition-opacity"
             >
               <img
-                src="https://riverservices.com.py/wp-content/uploads/2022/09/logo-footer.png"
+                src="/ana-logo-en-blanco.webp"
                 alt="RiverServices Logo"
                 className="w-24 h-12 object-contain rounded"
               />
             </a>
-          </div>
-        </div>
-
-        {/* Social Media and Copyright */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-4 mb-4 md:mb-0">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-            <p className="text-gray-400 text-sm">© 2025 River Supply SA. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
